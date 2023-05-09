@@ -90,9 +90,9 @@ app.use(router.get('/mulheres', mostraMulheres))//configurei a rota GET /mulhere
 app.use(router.post('/mulheres', criaMulher))// configurei rota POST /mulheres
 app.use(router.patch('/mulheres/:id', corrigeMulher))//configurei rota PATCH /mulheres/:id
 app.use(router.delete('/mulheres/:id', deletaMulher))// configurei rota DELETE /mulheres/:id
+
 //PORTA
 function mostraPorta() {
     console.log("Servidor criado e rodando na porta ", porta)
 }
-
 app.listen(porta, mostraPorta)//servidor ouvindo a porta
